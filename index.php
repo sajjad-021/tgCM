@@ -1,13 +1,13 @@
 <?php
 /*
- Telegram.me/OneProgrammer
- Telegram.me/SpyGuard
+ Telegram.me/sajjad_021
+ Telegram.me/tgMember
                    ----[ Lotfan Copy Right Ro Rayat Konid <3 ]----
 ############################################################################################
-# if you need Help for develop this source , You Can Send Message To Me With @SpyGuard_BOT #
+# if you need Help for develop this source , You Can Send Message To Me With @sajjad_021 #
 ############################################################################################
 */
-define('API_KEY','233635555:AAGoH04nawrKBg6OtlfANLq3NP1LmLF297Y');
+define('API_KEY','301224679:AAFUNV8h03IgoMzmtHEZ7uIRKddJXaXnM10');
 //----######------
 function makereq($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -61,7 +61,7 @@ $textmessage = isset($update->message->text)?$update->message->text:'';
 $txtmsg = $update->message->text;
 $reply = $update->message->reply_to_message->forward_from->id;
 $stickerid = $update->message->reply_to_message->sticker->file_id;
-$admin = 66443035;
+$admin = 158955285;
 $step = file_get_contents("data/".$from_id."/step.txt");
 
 //-------
@@ -99,7 +99,7 @@ $inch = file_get_contents("https://api.telegram.org/bot".API_KEY."/getChatMember
 	
 	if (strpos($inch , '"status":"left"') !== false ) {
 SendMessage($chat_id,"برای استفاده از ربات اول در کانال ما عضو شوید.
-@DevelopersCity");
+@tgMember");
 }
 elseif(isset($update->callback_query)){
     $callbackMessage = '';
@@ -124,7 +124,7 @@ elseif(isset($update->callback_query)){
             'reply_markup'=>json_encode([
                 'inline_keyboard'=>[
                     [
-                        ['text'=>"به کانال ما بپیوندید",'url'=>"https://telegram.me/DevelopersCity"]
+                        ['text'=>"به کانال ما بپیوندید",'url'=>"https://telegram.me/tgMember"]
                     ]
                 ]
             ])
@@ -140,7 +140,7 @@ elseif(isset($update->callback_query)){
             'reply_markup'=>json_encode([
                 'inline_keyboard'=>[
                     [
-                        ['text'=>"به کانال ما بپیوندید",'url'=>"https://telegram.me/DevelopersCity"]
+                        ['text'=>"به کانال ما بپیوندید",'url'=>"https://telegram.me/tgMember"]
                     ]
                 ]
             ])
@@ -161,7 +161,7 @@ var_dump(makereq('sendMessage',[
 
 🔹برای ساخت ربات از دکمه ی 🔄 ساخت ربات استفاده نمایید.
 
-🤖 @PvSazBot",
+🤖 @tgMessageBot",
 		'parse_mode'=>'MarkDown',
         	'reply_markup'=>json_encode([
             	'keyboard'=>[
@@ -241,7 +241,7 @@ $token = $textmessage ;
 		if (file_exists("bots/$un/index.php")) {
 		$source = file_get_contents("bot/index.php");
 		$source = str_replace("[*BOTTOKEN*]",$token,$source);
-		$source = str_replace("66443035",$from_id,$source);
+		$source = str_replace("158955285",$from_id,$source);
 		save("bots/$un/index.php",$source);	
 		file_get_contents("http://api.pwrtelegram.xyz/bot".$token."/setwebhook?url=http://zirgozaronline.ir/tg/PvSazBot/bots/$un/index.php");
 
@@ -305,7 +305,7 @@ var_dump(makereq('sendMessage',[
 		
 		$source = file_get_contents("bot/index.php");
 		$source = str_replace("[*BOTTOKEN*]",$token,$source);
-		$source = str_replace("66443035",$from_id,$source);
+		$source = str_replace("158955285",$from_id,$source);
 		save("bots/$un/index.php",$source);	
 		file_get_contents("http://api.pwrtelegram.xyz/bot".$token."/setwebhook?url=http://zirgozaronline.ir/tg/PvSazBot/bots/$un/index.php");
 
@@ -392,7 +392,7 @@ var_dump(makereq('sendMessage',[
 
 🔹برای ساخت ربات از دکمه ی 🔄 ساخت ربات استفاده نمایید.
 
-🤖 @PvSazBot",
+🤖 @tgMessageBot",
 		'parse_mode'=>'MarkDown',
         	'reply_markup'=>json_encode([
             	'keyboard'=>[
