@@ -58,8 +58,8 @@
 	$_forward = file_get_contents("data/setting/forward.txt");
 	$_joingp = file_get_contents("data/setting/joingp.txt");
 	//------------
-	$admin = 66443035;
-	$bottype = "**free**";
+	$admin = 158955285;
+	$bottype = "gold";
 	$step = file_get_contents("data/".$from_id."/step.txt");
 	$type = file_get_contents("data/".$from_id."/type.txt");
 	$list = file_get_contents("data/blocklist.txt");
